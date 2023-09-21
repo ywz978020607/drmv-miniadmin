@@ -27,3 +27,14 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:8000 # 即可打开浏览器直接输入ip:8000访问
 ```
 
+## 页面展示(主站+后台)
+其中后台为django默认自带页面，如需美化可一键安装django-simpleui等主题包
+
+<center class="half">
+<img src=".introduction/mainpage1.png" width="300" />
+<img src=".introduction/mainpage2.png" width="300" />
+<img src=".introduction/mainpage3.png" width="300" />
+<img src=".introduction/backpage1.png" width="300" />
+<img src=".introduction/backpage2.png" width="300" />
+</center>
+
