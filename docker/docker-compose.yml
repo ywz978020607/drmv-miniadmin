@@ -1,0 +1,29 @@
+version: '3'
+services:
+  # drrvnginx:
+  #   image: nginx:latest
+  #   ports:
+  #     - "8765:8765"
+  #   volumes:
+  #     - ..:/src
+  #     - ./nginx:/etc/nginx/conf.d
+  #   depends_on:
+  #     - drrvbend
+  drrvbend:
+    environment:
+      - TZ=Asia/Shanghai
+    build: .
+    image: drrvbend_img
+    command: #串行 最后一个暂驻
+      - bash
+      - -c
+      - |
+          # python django1/scripts/monitor.py  > docker/log/monitor.log 2>&1 &
+          uwsgi --ini django1/uwsgi.ini && tail -f /dev/null
+    volumes:
+      - ..:/src
+    ports:
+      - "8000:8000"
+    # expose:
+    #   - "8000"
+    restart: always
