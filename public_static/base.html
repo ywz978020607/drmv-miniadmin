@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}INSPINIA{% endblock %}</title>
+
+    <!-- <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"> -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">
+                                    {{forbase_username}}
+                            </span>
+                            <span class="text-muted text-xs block">menu <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a class="dropdown-item" href="/user/logout.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        摸鱼<br>大鸽
+                    </div>
+                </li>
+                <!-- <li class="active"> --> <!-- <li :class="{active:1 === 1}"> -->
+                {% for value in forbase_section %}
+                <li {% if forbase_path == value.link %} class="active" 
+                {% elif value.sub %}
+                    {% for sub_value in value.sub %}
+                        {% if forbase_path == sub_value.link %} class="active" {% endif %}
+                    {% endfor %}
+                {% endif %}>
+
+                    <a href={{value.link}}><i class="fa fa-th-large"></i> <span class="nav-label">{{value.name}}</span> </a>
+                    {% if value.sub %}
+                        <ul class="nav nav-second-level collapse in">
+                            {% for sub_value in value.sub %}
+                            <li {% if forbase_path == sub_value.link %} class="active" {% endif %}><a href={{sub_value.link}}>{{sub_value.name}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </nav>
+    
+    {% verbatim %}
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="/user/logout.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            {% endverbatim %} <!-- 使用django渲染 -->
+                {% block mycontent %}
+                {% endblock %}
+            {% verbatim %}
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                非主流量产全栈单人开发方案
+            </div>
+            <div>
+                <strong>Contact</strong> moyudage@bilibili.com
+            </div>
+        </div>
+
+    </div>
+{% endverbatim %}
+</div>
+
+
+<script src="/static/js/vue.global.js"></script>
+<script src="/static/js/axios.min.js"></script>
+{% block scripts %}
+
+{% endblock %}
+
+
+
+<!-- Mainly scripts -->
+<script src="/static/js/jquery-3.1.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="/static/js/inspinia.js"></script>
+<script src="/static/js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>
