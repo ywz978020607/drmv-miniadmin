@@ -1,0 +1,424 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 12:48:57 2023] ***
+compiled with version: 10.2.1 20210110 on 29 September 2023 04:28:57
+os: Linux-5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21)
+nodename: 2e100dc710c9
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on [::]:8000 #0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 测试用 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43477 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.16 (default, Mar  1 2023, 16:08:07)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x563418ef4190
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 12, cores: 2)
+spawned uWSGI worker 3 (pid: 13, cores: 2)
+spawned uWSGI worker 4 (pid: 14, cores: 2)
+spawned uWSGI http 1 (pid: 15)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:23:03 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 55379283efa3
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 #0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 测试用 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38639 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x558a910b2a40
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 10, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
+spawned uWSGI worker 3 (pid: 12, cores: 2)
+spawned uWSGI worker 4 (pid: 13, cores: 2)
+spawned uWSGI http 1 (pid: 14)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:25:28 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: b98283522063
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 测试用 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45203 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x55902d3f0a20
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 10, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
+spawned uWSGI worker 3 (pid: 12, cores: 2)
+spawned uWSGI worker 4 (pid: 13, cores: 2)
+spawned uWSGI http 1 (pid: 14)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:29:36 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: b52a059828e8
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 测试用 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44327 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x56284f881a20
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 12, cores: 2)
+spawned uWSGI worker 3 (pid: 13, cores: 2)
+spawned uWSGI worker 4 (pid: 14, cores: 2)
+spawned uWSGI http 1 (pid: 15)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/1] 172.18.0.1 () {38 vars in 865 bytes} [Fri Sep 29 13:29:55 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/2] 172.18.0.1 () {38 vars in 865 bytes} [Fri Sep 29 13:29:57 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/3] 172.18.0.1 () {40 vars in 887 bytes} [Fri Sep 29 13:30:13 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/4] 172.18.0.1 () {40 vars in 887 bytes} [Fri Sep 29 13:30:14 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:31:36 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 7880a5400105
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40421 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x561467913aa0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+failed to open python file django1/wsgi.py # http，当不使用nginx的时候，使用这个来转发
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 12, cores: 2)
+spawned uWSGI worker 3 (pid: 13, cores: 2)
+spawned uWSGI worker 4 (pid: 14, cores: 2)
+spawned uWSGI http 1 (pid: 15)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/1] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:40 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/2] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:41 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/3] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:42 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/4] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:42 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/5] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:42 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/6] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:42 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 13|app: -1|req: -1/7] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:31:42 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:33:26 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 538163c55cc7
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39215 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x55c34364baa0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+ModuleNotFoundError: No module named 'django1'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+failed to open python file /src/django1/wsgi.py # http，当不使用nginx的时候，使用这个来转发
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 12, cores: 2)
+spawned uWSGI worker 3 (pid: 13, cores: 2)
+spawned uWSGI worker 4 (pid: 14, cores: 2)
+spawned uWSGI http 1 (pid: 15)
+--- no python application found, check your startup logs for errors ---
+[pid: 14|app: -1|req: -1/1] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:33:29 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 14|app: -1|req: -1/2] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:33:31 2023] GET /user/login.html?next=/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:39:38 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: e7c4e4bb2fd3
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34789 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x56290c400a80
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56290c400a80 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+spawned uWSGI http 1 (pid: 19)
+[pid: 17|app: 0|req: 1/1] 172.18.0.1 () {40 vars in 877 bytes} [Fri Sep 29 13:39:40 2023] GET /user/login.html?next=/ => generated 1184 bytes in 98 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:42:10 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: feacdb8cab97
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x555771c4e940
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555771c4e940 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:42:40 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: a64d452e5387
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x559d6f030940
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559d6f030940 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 29 13:43:04 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 719260f81adf
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000    #http协议，当不使用nginx的时候，使用这个来转发 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34071 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x556094614a20
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556094614a20 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+spawned uWSGI http 1 (pid: 19)
