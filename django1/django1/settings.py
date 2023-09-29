@@ -98,7 +98,7 @@ ROOT_URLCONF = 'django1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'public_static'), \
+        'DIRS': [os.path.join(BASE_DIR,'templates'), \
                  os.path.join(BASE_DIR, "app1/templates"), \
                  os.path.join(BASE_DIR, "user/templates"), \
                  ],
@@ -178,14 +178,13 @@ USE_TZ = False #数据库时间也更改
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+# 模式1 运行server: True/False
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, '/static/'),
+)
 
-
-#ywz set static path 可选配置-》加入其他比如根目录下pub_static内容
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'public_static'),\
-                     os.path.join(BASE_DIR,"app1/static"), \
-                     os.path.join(BASE_DIR,"user/static"), \
-                    ]
-
-#ywz end
+# 模式2 运行collectfiles - debug = True
+# STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 AUTH_USER_MODEL = 'user.MyUser'
