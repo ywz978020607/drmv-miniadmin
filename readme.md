@@ -47,7 +47,8 @@ docker-compose up -d
 </center>
 
 ## 其他说明
-项目已经对静态文件规整，兼容debug的开关双模式，在django后端对静态文件路由，uwsgi/(nginx)不需单独配置，当然如果想另外配置静态文件也可以。通过静态文件路由模式的兼容，极大方便了纯python运行时、uwsgi/docker运行下的调试模式分别开或关的代码兼容。
+项目已经对静态文件规整，兼容debug的开关双模式，在django后端对静态文件路由，uwsgi/(nginx)不需单独配置，(当然如果想另外配置静态文件也可以)。  
+通过静态文件路由模式的兼容，极大方便了纯python运行时、uwsgi/docker运行下的调试模式分别开或关的代码兼容。
 - 总结一句话，无论用哪种启动方式，都可自由地只改动setting.py中debug=True或False切换运行模式，不需特意处理静态文件路由。
 - 另外，如果想额外再次打包静态文件(python manage.py collectstatic)，需要到settings中设置1. debug=True 2. STATICFILES_DIR赋值去掉首尾的`/`(见配置注释模式2)
 
