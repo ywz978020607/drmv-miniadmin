@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from conf import env
 
 def inject_session(request, local_dict):
-    request.session.pop("render")
+    # request.session.pop("render")
     request.session["render"] = request.session.get("render", {
         "forbase_username": request.user.username,
         "forbase_section": env.section
