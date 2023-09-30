@@ -31,7 +31,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ko-3sh=txb*hjq$a2(j2&qs1^=@_%7%54lh&8pl6t%j#bp8+ei'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+collect_mode = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -178,13 +179,13 @@ USE_TZ = False #数据库时间也更改
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-# 模式1 运行server: True/False
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '/static/'),
 )
+if DEBUG == False or collect_mode == True:
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+if DEBUG == True or collect_mode == True:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
-# 模式2 运行collectfiles - debug = True
-# STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 AUTH_USER_MODEL = 'user.MyUser'

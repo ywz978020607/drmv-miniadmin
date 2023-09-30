@@ -51,7 +51,7 @@
                     {% endfor %}
                 {% endif %}>
 
-                    <a href={{value.link}}><i class="fa fa-th-large"></i> <span class="nav-label">{{value.name}}</span> </a>
+                    <a href={{value.link}}><i>{{forloop.counter}}</i> <span class="nav-label">{{value.name}}</span> </a>
                     {% if value.sub %}
                         <ul class="nav nav-second-level collapse">
                             {% for sub_value in value.sub %}
