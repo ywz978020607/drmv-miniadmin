@@ -118,15 +118,18 @@ def send(receiver,alert_context, tfile=''):
 #######################################################################
 
 def deal_main():
-    get_cf_dns()
+    get_cf_dns() #更新remote_name_noproxy
     local_ip = get_local_ipv6()
-    res = os.popen('ping {} -c 3'.format(remote_name_noproxy)).read()
-    is_connected = bool(float(res.split("% packet loss")[0].split(", ")[-1].strip()) < 50)
-    is_self = bool(remote_name_noproxy == local_ip)
+    if remote_name_noproxy == "":
+        is_connected = False
+    else:
+        res = os.popen('ping {} -c 3'.format(remote_name_noproxy)).read()
+        is_connected = bool(float(res.split("% packet loss")[0].split(", ")[-1].strip()) < 50)
+        is_self = bool(remote_name_noproxy == local_ip)
 
-    port = port_passwd_config.get(remote_name_noproxy, port_passwd_config["default"])[0]
-    passwd = port_passwd_config.get(remote_name_noproxy, port_passwd_config["default"])[1]
-    # print("remote ip: {}:{}".format(remote_name_noproxy, port))
+        port = port_passwd_config.get(remote_name_noproxy, port_passwd_config["default"])[0]
+        passwd = port_passwd_config.get(remote_name_noproxy, port_passwd_config["default"])[1]
+        # print("remote ip: {}:{}".format(remote_name_noproxy, port))
 
     # 判断是否需要更新dns
     if not is_connected:
@@ -151,7 +154,6 @@ def deal_main():
                 passwd, int(port), remote_name_noproxy, file_path, local_file_path
             ))
             print("update file")
-
 
 if __name__ == "__main__":
     try:
