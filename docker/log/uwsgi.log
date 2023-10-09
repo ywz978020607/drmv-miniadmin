@@ -422,3 +422,269 @@ spawned uWSGI worker 2 (pid: 13, cores: 2)
 spawned uWSGI worker 3 (pid: 15, cores: 2)
 spawned uWSGI worker 4 (pid: 17, cores: 2)
 spawned uWSGI http 1 (pid: 19)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Oct  9 22:24:13 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 1185fdf203b5
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 switch-2 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x56140c295960
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56140c295960 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 12, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Oct  9 22:25:28 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: b9ddeb6f32bf
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 switch-2 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x55873a96d960
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55873a96d960 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Oct  9 22:26:35 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 731d2facf08f
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 switch-2 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x56268c24e960
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56268c24e960 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Oct  9 22:27:44 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 76e451ef553b
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 switch-2 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x55c1b7bdc960
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c1b7bdc960 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+[pid: 17|app: 0|req: 1/1] 172.18.0.1 () {54 vars in 1125 bytes} [Mon Oct  9 22:28:03 2023] GET /favicon.ico => generated 4412 bytes in 143 msecs (HTTP/1.1 404) 5 headers in 183 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 2/2] 172.18.0.1 () {56 vars in 1211 bytes} [Mon Oct  9 22:28:24 2023] GET //readme.md => generated 4412 bytes in 7 msecs (HTTP/1.1 404) 5 headers in 183 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 4/3] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:28:24 2023] GET /static/font-awesome/css/font-awesome.css => generated 37414 bytes in 17 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 4/4] 172.18.0.1 () {54 vars in 1128 bytes} [Mon Oct  9 22:28:24 2023] GET /static/css/bootstrap.min.css => generated 140421 bytes in 20 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 6/5] 172.18.0.1 () {54 vars in 1102 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/axios.min.js => generated 14239 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 7/6] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/jquery-3.1.1.min.js => generated 86709 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 8/7] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/popper.min.js => generated 19187 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 8/8] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/bootstrap.min.js => generated 50676 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 10/9] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/plugins/metisMenu/jquery.metisMenu.js => generated 13090 bytes in 12 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 10/10] 172.18.0.1 () {54 vars in 1164 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/plugins/slimscroll/jquery.slimscroll.min.js => generated 4682 bytes in 10 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 12/11] 172.18.0.1 () {54 vars in 1100 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/inspinia.js => generated 8915 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 13/12] 172.18.0.1 () {54 vars in 1126 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/plugins/pace/pace.min.js => generated 12363 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 14/13] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/marked.min.js => generated 46670 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 15/14] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/highlight.min.js => generated 60155 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 15/15] 172.18.0.1 () {54 vars in 1132 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/highlightjs-line-numbers.js => generated 11870 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 1/16] 172.18.0.1 () {54 vars in 1124 bytes} [Mon Oct  9 22:28:24 2023] GET /static/css/default.min.css => generated 1233 bytes in 126 msecs via sendfile() (HTTP/1.1 200) 6 headers in 206 bytes (0 switches on core 0)
+[pid: 13|app: 0|req: 1/17] 172.18.0.1 () {54 vars in 1112 bytes} [Mon Oct  9 22:28:24 2023] GET /static/css/style.css => generated 197784 bytes in 127 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 1)
+[pid: 15|app: 0|req: 2/18] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:28:24 2023] GET /static/css/animate.css => generated 66203 bytes in 132 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 2/19] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:24 2023] GET /static/js/vue.global.js => generated 537765 bytes in 134 msecs via sendfile() (HTTP/1.1 200) 6 headers in 215 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 16/20] 172.18.0.1 () {54 vars in 1193 bytes} [Mon Oct  9 22:28:24 2023] GET /static/css/patterns/header-profile.png => generated 5877 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 17/21] 172.18.0.1 () {56 vars in 1231 bytes} [Mon Oct  9 22:28:24 2023] GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 => generated 77160 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 8 headers in 296 bytes (0 switches on core 1)
+ab
+[pid: 17|app: 0|req: 18/22] 172.18.0.1 () {56 vars in 1192 bytes} [Mon Oct  9 22:28:27 2023] GET / => generated 0 bytes in 11 msecs (HTTP/1.1 302) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 19/23] 172.18.0.1 () {56 vars in 1212 bytes} [Mon Oct  9 22:28:27 2023] GET /app1/test/ => generated 10511 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 322 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 20/24] 172.18.0.1 () {58 vars in 1274 bytes} [Mon Oct  9 22:28:32 2023] GET /user/logout.html => generated 0 bytes in 22 msecs (HTTP/1.1 302) 7 headers in 266 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 21/25] 172.18.0.1 () {58 vars in 1198 bytes} [Mon Oct  9 22:28:32 2023] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 22/26] 172.18.0.1 () {58 vars in 1241 bytes} [Mon Oct  9 22:28:32 2023] GET /user/login.html?next=/ => generated 1184 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 23/27] 172.18.0.1 () {66 vars in 1432 bytes} [Mon Oct  9 22:28:35 2023] POST /user/login.html?next=/ => generated 1267 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 263 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 24/28] 172.18.0.1 () {66 vars in 1432 bytes} [Mon Oct  9 22:28:38 2023] POST /user/login.html?next=/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 9 headers in 421 bytes (1 switches on core 0)
+ab
+[pid: 17|app: 0|req: 25/29] 172.18.0.1 () {60 vars in 1285 bytes} [Mon Oct  9 22:28:38 2023] GET / => generated 0 bytes in 6 msecs (HTTP/1.1 302) 6 headers in 199 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 26/30] 172.18.0.1 () {60 vars in 1305 bytes} [Mon Oct  9 22:28:38 2023] GET /app1/test/ => generated 10511 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 322 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 28/31] 172.18.0.1 () {54 vars in 1128 bytes} [Mon Oct  9 22:28:38 2023] GET /static/css/bootstrap.min.css => generated 140421 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 1)
+[pid: 13|app: 0|req: 3/32] 172.18.0.1 () {54 vars in 1124 bytes} [Mon Oct  9 22:28:38 2023] GET /static/css/default.min.css => generated 1233 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 206 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 4/33] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:28:38 2023] GET /static/css/animate.css => generated 66203 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 5/34] 172.18.0.1 () {54 vars in 1112 bytes} [Mon Oct  9 22:28:38 2023] GET /static/css/style.css => generated 197784 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 1)
+[pid: 13|app: 0|req: 4/35] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/vue.global.js => generated 537765 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 6 headers in 215 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 29/36] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:28:38 2023] GET /static/font-awesome/css/font-awesome.css => generated 37414 bytes in 16 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 30/37] 172.18.0.1 () {54 vars in 1102 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/axios.min.js => generated 14239 bytes in 16 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 15|app: 0|req: 6/38] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/jquery-3.1.1.min.js => generated 86709 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 13|app: 0|req: 5/39] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/popper.min.js => generated 19187 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 31/40] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/bootstrap.min.js => generated 50676 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 7/41] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/plugins/metisMenu/jquery.metisMenu.js => generated 13090 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 13|app: 0|req: 6/42] 172.18.0.1 () {54 vars in 1164 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/plugins/slimscroll/jquery.slimscroll.min.js => generated 4682 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 32/43] 172.18.0.1 () {54 vars in 1100 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/inspinia.js => generated 8915 bytes in 12 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 1)
+[pid: 13|app: 0|req: 7/44] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/marked.min.js => generated 46670 bytes in 12 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 8/45] 172.18.0.1 () {54 vars in 1126 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/plugins/pace/pace.min.js => generated 12363 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 32/46] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/highlight.min.js => generated 60155 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 8/47] 172.18.0.1 () {54 vars in 1132 bytes} [Mon Oct  9 22:28:38 2023] GET /static/js/highlightjs-line-numbers.js => generated 11870 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 13|app: 0|req: 7/48] 172.18.0.1 () {54 vars in 1193 bytes} [Mon Oct  9 22:28:38 2023] GET /static/css/patterns/header-profile.png => generated 5877 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 33/49] 172.18.0.1 () {56 vars in 1231 bytes} [Mon Oct  9 22:28:38 2023] GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 => generated 77160 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 8 headers in 296 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 34/50] 172.18.0.1 () {58 vars in 1282 bytes} [Mon Oct  9 22:28:41 2023] GET /md/notes1/readme.md/ => generated 5936 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 35/51] 172.18.0.1 () {58 vars in 1282 bytes} [Mon Oct  9 22:28:44 2023] GET /app1/test/sub1/ => generated 10512 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 322 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 36/52] 172.18.0.1 () {58 vars in 1279 bytes} [Mon Oct  9 22:28:46 2023] GET /user/logout.html => generated 0 bytes in 17 msecs (HTTP/1.1 302) 7 headers in 266 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 37/53] 172.18.0.1 () {58 vars in 1203 bytes} [Mon Oct  9 22:28:46 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 38/54] 172.18.0.1 () {58 vars in 1246 bytes} [Mon Oct  9 22:28:46 2023] GET /user/login.html?next=/ => generated 1184 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 39/55] 172.18.0.1 () {66 vars in 1432 bytes} [Mon Oct  9 22:28:49 2023] POST /user/login.html?next=/ => generated 0 bytes in 69 msecs (HTTP/1.1 302) 9 headers in 421 bytes (1 switches on core 1)
+ab
+[pid: 17|app: 0|req: 40/56] 172.18.0.1 () {60 vars in 1285 bytes} [Mon Oct  9 22:28:49 2023] GET / => generated 0 bytes in 6 msecs (HTTP/1.1 302) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 41/57] 172.18.0.1 () {60 vars in 1305 bytes} [Mon Oct  9 22:28:49 2023] GET /app1/test/ => generated 10511 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 322 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 42/58] 172.18.0.1 () {58 vars in 1274 bytes} [Mon Oct  9 22:28:51 2023] GET /user/logout.html => generated 0 bytes in 17 msecs (HTTP/1.1 302) 7 headers in 266 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 43/59] 172.18.0.1 () {58 vars in 1198 bytes} [Mon Oct  9 22:28:51 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 44/60] 172.18.0.1 () {58 vars in 1241 bytes} [Mon Oct  9 22:28:51 2023] GET /user/login.html?next=/ => generated 1184 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Oct  9 22:30:19 2023] ***
+compiled with version: 12.2.0 on 29 September 2023 05:22:48
+os: Linux-5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022
+nodename: 2ab9bfad931b
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 12
+current working directory: /src
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /src/django1/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 # 使用nginx时 用这个转发 switch-2 fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x562d6e645960
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562d6e645960 pid: 9 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+spawned uWSGI worker 2 (pid: 13, cores: 2)
+spawned uWSGI worker 3 (pid: 15, cores: 2)
+spawned uWSGI worker 4 (pid: 17, cores: 2)
+[pid: 17|app: 0|req: 1/1] 172.18.0.1 () {56 vars in 1148 bytes} [Mon Oct  9 22:31:37 2023] GET / => generated 0 bytes in 98 msecs (HTTP/1.1 302) 6 headers in 211 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 2/2] 172.18.0.1 () {56 vars in 1191 bytes} [Mon Oct  9 22:31:37 2023] GET /user/login.html?next=/ => generated 1184 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 3/3] 172.18.0.1 () {66 vars in 1432 bytes} [Mon Oct  9 22:31:39 2023] POST /user/login.html?next=/ => generated 0 bytes in 74 msecs (HTTP/1.1 302) 9 headers in 421 bytes (1 switches on core 0)
+ab
+[pid: 17|app: 0|req: 4/4] 172.18.0.1 () {60 vars in 1285 bytes} [Mon Oct  9 22:31:39 2023] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 302) 6 headers in 199 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 5/5] 172.18.0.1 () {60 vars in 1305 bytes} [Mon Oct  9 22:31:39 2023] GET /app1/test/ => generated 10511 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 322 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 7/6] 172.18.0.1 () {54 vars in 1128 bytes} [Mon Oct  9 22:31:39 2023] GET /static/css/bootstrap.min.css => generated 140421 bytes in 22 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 7/7] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:31:39 2023] GET /static/font-awesome/css/font-awesome.css => generated 37414 bytes in 20 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 8/8] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/jquery-3.1.1.min.js => generated 86709 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 9/9] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/popper.min.js => generated 19187 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 10/10] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/bootstrap.min.js => generated 50676 bytes in 7 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 11/11] 172.18.0.1 () {54 vars in 1152 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/plugins/metisMenu/jquery.metisMenu.js => generated 13090 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 12/12] 172.18.0.1 () {54 vars in 1164 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/plugins/slimscroll/jquery.slimscroll.min.js => generated 4682 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 13/13] 172.18.0.1 () {54 vars in 1100 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/inspinia.js => generated 8915 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 213 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 14/14] 172.18.0.1 () {54 vars in 1126 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/plugins/pace/pace.min.js => generated 12363 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 15/15] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/marked.min.js => generated 46670 bytes in 7 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 16/16] 172.18.0.1 () {54 vars in 1110 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/highlight.min.js => generated 60155 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 17/17] 172.18.0.1 () {54 vars in 1132 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/highlightjs-line-numbers.js => generated 11870 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 13|app: 0|req: 2/18] 172.18.0.1 () {54 vars in 1124 bytes} [Mon Oct  9 22:31:39 2023] GET /static/css/default.min.css => generated 1233 bytes in 131 msecs via sendfile() (HTTP/1.1 200) 6 headers in 206 bytes (0 switches on core 0)
+[pid: 13|app: 0|req: 2/19] 172.18.0.1 () {54 vars in 1104 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/vue.global.js => generated 537765 bytes in 134 msecs via sendfile() (HTTP/1.1 200) 6 headers in 215 bytes (0 switches on core 1)
+[pid: 15|app: 0|req: 2/20] 172.18.0.1 () {54 vars in 1116 bytes} [Mon Oct  9 22:31:39 2023] GET /static/css/animate.css => generated 66203 bytes in 135 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 2/21] 172.18.0.1 () {54 vars in 1112 bytes} [Mon Oct  9 22:31:39 2023] GET /static/css/style.css => generated 197784 bytes in 136 msecs via sendfile() (HTTP/1.1 200) 6 headers in 208 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 1/22] 172.18.0.1 () {54 vars in 1102 bytes} [Mon Oct  9 22:31:39 2023] GET /static/js/axios.min.js => generated 14239 bytes in 139 msecs via sendfile() (HTTP/1.1 200) 6 headers in 214 bytes (0 switches on core 0)
+[pid: 17|app: 0|req: 19/23] 172.18.0.1 () {54 vars in 1193 bytes} [Mon Oct  9 22:31:39 2023] GET /static/css/patterns/header-profile.png => generated 5877 bytes in 10 msecs via sendfile() (HTTP/1.1 200) 6 headers in 207 bytes (0 switches on core 1)
+[pid: 17|app: 0|req: 19/24] 172.18.0.1 () {56 vars in 1231 bytes} [Mon Oct  9 22:31:39 2023] GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 => generated 77160 bytes in 10 msecs via sendfile() (HTTP/1.1 200) 8 headers in 296 bytes (0 switches on core 0)
+[pid: 15|app: 0|req: 3/25] 172.18.0.1 () {58 vars in 1274 bytes} [Mon Oct  9 22:31:41 2023] GET /user/logout.html => generated 0 bytes in 23 msecs (HTTP/1.1 302) 7 headers in 266 bytes (1 switches on core 0)
+[pid: 17|app: 0|req: 20/26] 172.18.0.1 () {58 vars in 1198 bytes} [Mon Oct  9 22:31:41 2023] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 17|app: 0|req: 21/27] 172.18.0.1 () {58 vars in 1241 bytes} [Mon Oct  9 22:31:41 2023] GET /user/login.html?next=/ => generated 1184 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 0)

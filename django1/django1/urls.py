@@ -21,7 +21,7 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from app1 import views
-
+from utils import gviews
 
 urlpatterns = [ 
     #　静态文件夹路由 debug - false
@@ -33,4 +33,6 @@ urlpatterns = [
 
     path('',views.index),
     path('app1/',include('app1.urls')),
+
+    url(r'^md/*', gviews.mdrender),
 ]

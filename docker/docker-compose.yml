@@ -1,14 +1,14 @@
 version: '3'
 services:
-  # drrvnginx:
-  #   image: nginx:latest
-  #   ports:
-  #     - "8765:8765"
-  #   volumes:
-  #     - ..:/src
-  #     - ./nginx:/etc/nginx/conf.d
-  #   depends_on:
-  #     - drrvbend
+  drrvnginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ..:/src
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - drrvbend
   drrvbend:
     environment:
       - TZ=Asia/Shanghai
@@ -23,8 +23,8 @@ services:
           # python manage.py runserver 0.0.0.0:8000
     volumes:
       - ..:/src
-    ports:
-      - "8000:8000"
-    # expose:
-    #   - "8000"
+    # ports:
+    #   - "8000:8000"
+    expose:
+      - "8000"
     restart: always

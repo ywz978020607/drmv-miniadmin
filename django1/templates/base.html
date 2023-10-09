@@ -16,6 +16,8 @@
     <link href="/static/css/animate.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="github-markdown.css"> -->
+    <link rel="stylesheet" href="/static/css/default.min.css">
 </head>
 
 <body>
@@ -128,6 +130,18 @@
 <script src="/static/js/inspinia.js"></script>
 <script src="/static/js/plugins/pace/pace.min.js"></script>
 
+<!-- Markdown javascript -->
+<script src="/static/js/marked.min.js"></script>
+<script src="/static/js/highlight.min.js"></script>
+<script src="/static/js/highlightjs-line-numbers.js"></script>
+<script>
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+    var m=document.querySelectorAll('code[markdown]');
+    for(var i=0;i<m.length;i++){
+    m[i].outerHTML='<div>'+marked(m[i].innerHTML,{breaks: true})+'</div>';
+    }
+</script>
 
 </body>
 

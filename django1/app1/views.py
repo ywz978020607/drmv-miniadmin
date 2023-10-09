@@ -31,7 +31,6 @@ def test(request):
     # 只要赋值给任意变量，即可直接以v-html语法写前端组件
     # xxx 自己的逻辑 
     load_data = {'a': 123, 'b': 12} # 将直接在前端渲染
-
     return render_data.flush_and_render(request, "test.html", locals())
 
 

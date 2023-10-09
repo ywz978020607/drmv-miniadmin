@@ -1,4 +1,4 @@
-import os
+import os, glob
 
 from django1.settings import BASE_DIR
 
@@ -18,6 +18,22 @@ section = [
         {'link': '/app1/test/sub1/', 'name': '二级1',},
     ]
 },
-{'name': '后台管理', 'link': '/admin/', },
-
 ]
+
+# markdown系列
+md_dict_notes = {
+    "笔记本1(md渲染)": {
+        "/md/notes1/readme.md": "笔记1-readme",
+    },
+    
+}
+
+for nb_name in md_dict_notes.keys():
+    sub_data = []
+    md_dict_sub = md_dict_notes[nb_name]
+    for file_path in md_dict_sub.keys(): sub_data.append({'link': file_path + "/", 'name': md_dict_sub[file_path],},)
+    section.append({'name': nb_name,'sub': sub_data })
+
+
+# 后台设置
+section.append({'name': '后台管理', 'link': '/admin/', })
