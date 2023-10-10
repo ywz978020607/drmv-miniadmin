@@ -16,7 +16,7 @@ import re
 import os
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
-from utils import send_email, render_data
+from utils import render_data
 
 
 def mdrender(request):

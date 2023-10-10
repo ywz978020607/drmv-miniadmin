@@ -16,7 +16,7 @@ import re
 from .models import * #引用
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
-from utils import send_email, render_data
+from utils import render_data
 
 #默认入口设计：
 @login_required(login_url = '/user/login.html')

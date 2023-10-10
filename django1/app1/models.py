@@ -3,6 +3,10 @@ from django.db import models
 # Create your models here.
 
 
+class TextKeyVal(models.Model):
+    keyname = models.CharField(max_length=30)
+    value = models.TextField()
+
 #产品分类表
 class Type(models.Model):
     id = models.AutoField("序号",primary_key= True)
