@@ -1,11 +1,11 @@
 from django.shortcuts import render,redirect
-from conf import env
+from django.conf import settings
 
 def inject_session(request, local_dict):
     # request.session.pop("render")
     request.session["render"] = request.session.get("render", {
         "forbase_username": request.user.username,
-        "forbase_section": env.section
+        "forbase_section": settings.SECTION
     })
     request.session["render"]["forbase_path"] = "/"+request.path.strip("/")+"/"
     for key in local_dict:

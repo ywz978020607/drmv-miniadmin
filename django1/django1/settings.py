@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ******************** 动态配置 ******************** #
 # ================================================= #
 
-# from conf.env import *
+from conf.env import *
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -32,7 +32,7 @@ SECRET_KEY = 'ko-3sh=txb*hjq$a2(j2&qs1^=@_%7%54lh&8pl6t%j#bp8+ei'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-collect_mode = False
+COLLECT_MODE = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -182,9 +182,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '/static/'),
 )
-if DEBUG == False or collect_mode == True:
+if DEBUG == False or COLLECT_MODE == True:
     STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-if DEBUG == True or collect_mode == True:
+if DEBUG == True or COLLECT_MODE == True:
     STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 
