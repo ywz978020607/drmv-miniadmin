@@ -32,7 +32,11 @@
                     <div class="dropdown profile-element">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="block m-t-xs font-bold">
-                                    {{forbase_username}}
+                                {% if user.is_authenticated %}
+                                    <p>欢迎您，{{ user.username }}</p>
+                                {% else %}
+                                <p><a href="/user/login.html">请登录</a></p>
+                                {% endif %}
                             </span>
                             <span class="text-muted text-xs block">menu <b class="caret"></b></span>
                         </a>

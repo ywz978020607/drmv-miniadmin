@@ -16,14 +16,18 @@ import re
 from .models import * #引用
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
-from utils import render_data
+from utils import render_data, gviews
 
 #默认入口设计：
-@login_required(login_url = '/user/login.html')
+# @login_required(login_url = '/user/login.html')
 def index(request):
-    username = request.user.username
-    print(username)
-    return HttpResponseRedirect('/app1/test/')
+    # username = request.user.username
+    if request.user.is_authenticated:
+        return HttpResponseRedirect('/app1/test/')
+    else:
+        request.path = "/md/Welcome.md/"
+        return gviews.mdrender(request, {"title": "欢迎"})
+        # return HttpResponseRedirect('/md/Welcome.md/')
 
 
 @login_required(login_url = '/user/login.html')
@@ -39,7 +43,6 @@ def test_sub1(request):
     # 只要赋值给任意变量，即可直接以v-html语法写前端组件
     # xxx 自己的逻辑 
     load_data = {'data': 'in sub 1!'} # 将直接在前端渲染
-
     return render_data.flush_and_render(request, "test.html", locals())
 
 

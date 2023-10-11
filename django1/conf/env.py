@@ -1,6 +1,6 @@
 import os, glob
 
-# 章节设置 - 共用标题栏
+# 章节设置
 SECTION = [
 {'name': '主页1', 'link': '/app1/test/', },
 {'name': '一级标题(链接自动失效)',
@@ -11,19 +11,32 @@ SECTION = [
 ]
 
 # markdown系列
-md_dict_notes = {
-    "笔记本1(md渲染)": {
-        "/md/notes1/readme.md": "笔记1-readme",
+md_dict_notes = [
+    {'name': '笔记本1(md渲染)',
+     'sub': [
+        {'link': '/md/notes1/readme.md/', 'name': '笔记1-readme', 'need_login': False},
+     ]
     },
-    
-}
-PATH_NAME_CACHE = {}
-for nb_name in md_dict_notes.keys():
-    sub_data = []
-    md_dict_sub = md_dict_notes[nb_name]
-    PATH_NAME_CACHE.update(md_dict_sub)
-    for file_path in md_dict_sub.keys(): sub_data.append({'link': file_path + "/", 'name': md_dict_sub[file_path],},)
-    SECTION.append({'name': nb_name,'sub': sub_data })
+]
+SECTION += md_dict_notes
 
 # 后台设置
-SECTION.append({'name': '后台管理', 'link': '/admin/', })
+SECTION.append({'name': '后台管理', 'link': '/admin/', 'need_login': False})
+
+
+# 整合过滤
+PATH_NAME_CACHE = {} # extract link_name_dict
+SECTION_NOLOGIN = [] # SECTION_NOLOGIN
+for head_1_item in md_dict_notes:
+    if 'link' in head_1_item.keys():
+        PATH_NAME_CACHE[head_1_item['link']] = head_1_item['name']
+        if head_1_item.get('need_login', True) == False:
+            SECTION_NOLOGIN.append(head_1_item)
+    elif len(head_1_item.get('sub', [])) > 0:
+        temp_sub = []
+        for head_2_item in head_1_item['sub']:
+            PATH_NAME_CACHE[head_2_item['link']] = head_2_item['name']
+            if head_2_item.get('need_login', True) == False:
+                temp_sub.append(head_2_item)
+        if len(temp_sub) > 0:
+            SECTION_NOLOGIN.append({'name': head_1_item['name'], 'sub': temp_sub})

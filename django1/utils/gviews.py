@@ -19,9 +19,10 @@ from django.http import HttpResponseRedirect
 from utils import render_data
 from django.conf import settings
 
-def mdrender(request):
-    file_path = os.path.join("conf/", request.path.strip("/"))
-    title = settings.PATH_NAME_CACHE.get(request.path.rstrip("/"), request.path.rstrip("/"))
+def mdrender(request, config = None):
+    if config:
+        locals().update(config)
+    file_path = os.path.join("conf/", request.path.strip("/")) # /xxxx/xxx.md/
     if os.path.isfile(file_path):
         load_data = open(file_path, 'r', encoding='utf-8').read()
         return render_data.flush_and_render(request, "md2html.html", locals())
