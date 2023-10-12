@@ -4,7 +4,7 @@
 提供一个django+vue二次渲染的小网站demo，面向个人全栈量产式开发应用场景，提供一套基础小demo，方便二次开发
 
 ## 特性
-- 易调试：单python
+- 易调试：单python命令可完整启动调试
 - 易部署：支持nginx+uwsgi部署
 - 免编译：前端支持markdown/单页式Vue，无需编译前端
 - 低依赖：装好django即可，不需任何nodejs相关环境即可使用vue
