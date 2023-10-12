@@ -1,5 +1,5 @@
-<img src=".readme/drmv.png" width="500" />
-# DRMV全后端简易后台管理网站
+# DRMV全后端简易后台管理网站方案
+<img src=".readme/drmv.png" width="300" />
 基于django模板渲染能力，前端基础为inspinia(bootstrap系)，结合django自带权限管理后台  
 提供一个django+vue二次渲染的小网站demo，面向个人全栈量产式开发应用场景，提供一套基础小demo，方便二次开发
 
