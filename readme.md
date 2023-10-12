@@ -5,7 +5,7 @@
 
 ## 特性
 - 易调试：单python命令可完整启动调试
-- 易部署：支持nginx+uwsgi部署
+- 易部署：支持docker+nginx+uwsgi部署
 - 免编译：前端支持markdown/单页式Vue，无需编译前端
 - 低依赖：装好django即可，不需任何nodejs相关环境即可使用vue
 - 支持后台管理：复用django-admin后台管理，可嵌套模板
