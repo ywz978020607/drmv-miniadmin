@@ -1,5 +1,7 @@
-# DRMV全后端简易后台管理网站方案
+# Django Render Markdown/Vue.js(~~nodejs~~) with sqlite3
+## DRMV全后端简易后台管理网站方案
 <img src=".readme/drmv.png" width="300" />
+
 基于django模板渲染能力，前端基础为inspinia(bootstrap系)，结合django自带权限管理后台  
 提供一个django+vue二次渲染的小网站demo，面向个人全栈量产式开发应用场景，提供一套基础小demo，方便二次开发
 
@@ -19,7 +21,7 @@
 
 
 ## 技术方案
-django+django-render+vue.js(非分离编译-模板+动态引入免编译)+sqlite3+markdown
+django+django-render+markdown/vue.js(~~nodejs~~)+sqlite3
 
 ## 优点：
 1. 适合小型网站快速开发
