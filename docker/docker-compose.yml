@@ -1,6 +1,6 @@
 version: '3'
 services:
-  drrvnginx:
+  drmvnginx:
     image: nginx:latest
     ports:
       - "80:80"
@@ -8,12 +8,12 @@ services:
       - ..:/src
       - ./nginx:/etc/nginx/conf.d
     depends_on:
-      - drrvbend
-  drrvbend:
+      - drmvbend
+  drmvbend:
     environment:
       - TZ=Asia/Shanghai
     build: .
-    image: drrvbend_img
+    image: drmvbend_img
     command: #串行 最后一个暂驻
       - bash
       - -c
