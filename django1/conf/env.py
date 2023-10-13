@@ -15,6 +15,7 @@ md_dict_notes = [
     {'name': '笔记本1(md渲染)',
      'sub': [
         {'link': '/md/notes1/readme.md/', 'name': '笔记1-readme', 'need_login': False},
+        {'link': '/md/notes1/notes2.md/', 'name': 'notes2-笔记', 'need_login': False},
      ]
     },
 ]
@@ -27,7 +28,7 @@ SECTION.append({'name': '后台管理', 'link': '/admin/', 'need_login': False})
 # 整合过滤
 PATH_NAME_CACHE = {} # extract link_name_dict
 SECTION_NOLOGIN = [] # SECTION_NOLOGIN
-for head_1_item in md_dict_notes:
+for head_1_item in SECTION:
     if 'link' in head_1_item.keys():
         PATH_NAME_CACHE[head_1_item['link']] = head_1_item['name']
         if head_1_item.get('need_login', True) == False:
@@ -40,3 +41,4 @@ for head_1_item in md_dict_notes:
                 temp_sub.append(head_2_item)
         if len(temp_sub) > 0:
             SECTION_NOLOGIN.append({'name': head_1_item['name'], 'sub': temp_sub})
+# print(PATH_NAME_CACHE)

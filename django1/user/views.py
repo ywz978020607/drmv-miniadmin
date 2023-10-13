@@ -19,6 +19,7 @@ def loginView(request):
             if user:
                 if user.is_active:
                     login(request, user)
+                request.session.pop("render")
                 return redirect('/')
             else:
                 tips = '账号密码错误，请重新输入'
