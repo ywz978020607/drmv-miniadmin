@@ -23,7 +23,7 @@ SECTION += md_dict_notes
 
 # 后台设置
 SECTION.append({'name': '后台管理', 'link': '/admin/', 'need_login': False})
-
+SECTION.append({'name': 'WIKI文档', 'link': '/files/wiki/', 'need_login': False})
 
 # 整合过滤
 PATH_NAME_CACHE = {} # extract link_name_dict
