@@ -3,6 +3,7 @@
 *.log
 *.pyc
 files/*
+!files/wiki
 !files/wiki/*
 docker/log/*
 !docker/log/__empty.py

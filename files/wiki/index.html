@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode & Coding Interview Guide - Doocs Open Source Organization</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords"
+    content="doc,docs,doocs,documentation,github,gitee,coding,pages,leetcode,lcof,lcci,lcof2,coding-interview,coding-interview-guide,cracking-the-coding-interview,yanglbme">
+  <meta name="description" content="LeetCode、剑指Offer、程序员面试金典题解">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-darklight-theme@latest/dist/style.min.css">
+  <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/katex@latest/dist/katex.min.css"/>
+  <!-- <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/gitalk/dist/gitalk.css" /> -->
+  <link rel="stylesheet" href="mygitalk.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <style>
+    .content {
+      height: 100%;
+    }
+    .markdown-section {
+      height: 100%;
+    }
+    .markdown-section code {
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">摸鱼大鸽@Bilibili.com</div>
+  <script>
+    const isEn = () => location.hash.includes('README_EN');
+    const isRoot = () => ['', '#/', '#/README', '#/README_EN'].includes(location.hash);
+    // const sidebar = () => isRoot() ? false : (isEn() ? 'summary_en.md' : 'summary.md'); //仅首页不同 其他均以summary>README为目录
+    const sidebar = () => (isEn() ? 'summary_en.md' : 'summary.md'); //仅首页不同 其他均以summary>README为目录
+
+    window.addEventListener('hashchange', () => {
+      window.$docsify.loadSidebar = sidebar();
+      window.$docsify.pagination.previousText = isEn() ? 'PREVIOUS' : '上一项';
+      window.$docsify.pagination.nextText = isEn() ? 'NEXT' : '下一项';
+    });
+
+    window.$docsify = {
+      name: 'leetcode',
+      repo: 'ywz978020607/leetcode',
+      logo: '/images/doocs-leetcode.png',
+      search: [
+        '/', '/lcof2/',
+      ],
+      loadSidebar: sidebar(),
+      auto2top: true,
+      subMaxLevel: 2,
+      alias: {
+        '/lcof2/.*/summary.md': '/lcof2/summary.md',
+
+        '/lcof2/.*/summary_en.md': '/lcof2/summary_en.md',
+      },
+      contributors: {
+        repo: 'ywz978020607/leetcode',
+        ignores: ['/README.md', '/README_EN.md', '/summary.md'],
+        image: {
+          margin: '0.2em',
+          isRound: true
+        }
+      },
+      darklightTheme: {
+        defaultTheme: 'dark',
+        siteFont: 'Source Sans Pro,Helvetica Neue,Arial,sans-serif',
+        codeFontFamily: 'Roboto Mono, Monaco, courier, monospace',
+        bodyFontSize: '15px',
+        dark: {
+          background: '#191919',
+          highlightColor: '#e96900',
+          codeBackgroundColor: '#202020',
+          codeTextColor: '#b4b4b4',
+        },
+        light: {
+          highlightColor: '#e96900',
+        }
+      },
+      pagination: {
+        previousText: isEn() ? 'PREVIOUS' : '上一项',
+        nextText: isEn() ? 'NEXT' : '下一项',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      tabs: {
+        persist: true,
+        sync: true,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
+      },
+      plugins: [
+        (hook, vm) => {
+          hook.beforeEach((html) => {
+            const { file } = vm.route
+            const userContent = /githubusercontent\.com/.test(file)
+            const url = userContent ? file
+              .replace('raw.githubusercontent.com', 'github.com')
+              .replace(/\/main/, '/blob/main') : 'https://github.com/ywz978020607/leetcode/blob/main/' + file
+
+            const github = `[GitHub](${url})`
+            const gitee = `[Gitee](${url.replace("github", "gitee")})`
+            const editHtml = isEn() ? `:memo: Edit on ${github} / ${gitee}\n` : `:memo: 在 ${github} / ${gitee} 编辑\n`
+            return editHtml + html
+          })
+
+          hook.afterEach((html) => {
+            const copyright = isEn() ? '. All Rights Reserved' : ' 版权所有'
+            const currentYear = new Date().getFullYear()
+            const footer = `<footer>Copyright © 2023-${currentYear} <a href="https://github.com/ywz978020607" target="_blank">摸鱼大鸽</a>${copyright}</footer>`
+            return html + footer
+          })
+        },
+      ]
+    }
+  </script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-c.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-go.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-cpp.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-kotlin.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-csharp.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-typescript.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-swift.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-nim.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-ruby.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-rust.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-contributors@latest/dist/index.min.js"></script>
+  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    var tmp_path = window.location.hash.split("?")[0].split("/").slice(1, -1).join("/");
+    var identify_for_gitalk = window.location.pathname + (tmp_path?tmp_path:"");
+    console.log(identify_for_gitalk);
+    
+    const gitalk = new Gitalk({
+      clientID: "1f40925302c5814873f7",
+      clientSecret: "71d342e709c3b2edf3291995171aa419eb45330b",
+      repo: "ywz978020607.github.io",
+      owner: "ywz978020607",
+      admin: ["ywz978020607"],
+      // number: 3,
+      // id: "/leetcode/",
+      id: identify_for_gitalk,
+      title: identify_for_gitalk, //title不重要 主要是id
+      distractionFreeMode: false,
+      // labels: ["talk"],
+      perPage: 15,
+    });
+  </script>
+  </body>
+
+<!-- 
+cdn.jsdelivr.net
+test1.jsdelivr.net
+testingcf.jsdelivr.net
+fastly.jsdelivr.net
+gcore.jsdelivr.net
+ -->
+
+</html>
