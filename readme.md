@@ -19,6 +19,7 @@
 - 维护方便
 - 易迁移
 - 移动端响应兼容良好
+- 新特性：支持docsify. docker部署时nginx侧增加docsify，支持wiki文档内嵌drmv网站以及相互访问。
 
 
 ## 技术方案
@@ -32,6 +33,7 @@ django+django-render+markdown/vue.js(~~nodejs~~)+sqlite3
 5. 免配置数据库，利用文件类型数据库
 6. 不需要npm，不需要nodejs，不需要单独安装前端环境，方便交付后部署环境下修改前端
 7. 支持markdown原生写法直接转网页目录，方便做wiki，免编译
+8. 支持docsify内嵌网站，实现更好的wiki管理和网站交互
 
 ## 缺点
 非主流开发方式，前后端不分离
