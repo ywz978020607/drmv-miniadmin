@@ -6,7 +6,7 @@
 [English Version](/README_EN.md)
 
 ## 站点
--   [Django网站](/)
+-   <a href = "/">Django网站</a>
 
 ## 算法全解
 -   [剑指 Offer（专项突击版）](/lcof2/README.md)
