@@ -23,8 +23,8 @@ port_passwd_config = {
 cf_dict = {}
 remote_name_noproxy = ""
 
-file_path = "/root/syncproj1/django1"
-local_file_path = file_path
+file_path = "/root/syncproj1/django1/db.sqlite3"
+local_file_path = "/root/syncproj1/django1/db.sqlite3"
 
 # cloudfare-settings
 IP_API = 'https://api.ipify.org?format=json'
